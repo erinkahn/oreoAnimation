@@ -1,0 +1,600 @@
+* {
+    box-sizing: border-box;
+}
+
+
+html, body {
+    width: 100%;
+    height: 100%:
+    overflow-x: hidden; /* no horizontal scrolling */
+}
+
+
+/* ------------------ mobile 320---------------------------------*/
+
+@media screen and (min-width: 0px){
+
+    /*-------top oreo section container---------*/
+    .oreo-animation {
+        position: relative;
+        width: 100%;
+        height: 550px;
+        overflow: hidden;
+        background-image: url("../img/milk-bkg.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: -2;
+        display: flex;
+        justify-content: center;
+    }
+
+    /* top blue bkgrd elements  */
+
+    .logo{
+        position: absolute;
+        top: 2%;
+        left: 2%;
+        z-index: 1;
+        height: 70px;
+    }
+
+    .oreo-0{
+        display: flex;
+        justify-content: center;
+        margin-top: 80px;
+        position: absolute;
+        height: 120px;
+    }
+
+    .oreo-1{
+        display: flex;
+        justify-content: center;
+        margin-top: 370px;
+        margin-left: -97px;
+        position: absolute;
+        height: 120px;
+        opacity: 1;
+    }
+
+    .oreo-2{
+        display: flex;
+        justify-content: center;
+        margin-top: 370px;
+        margin-left: 5px;
+        position: absolute;
+        height: 120px;
+        opacity: 1;
+    }
+
+    .oreo-3{
+        display: flex;
+        justify-content: center;
+        margin-top: 370px;
+        margin-left: 100px;
+        position: absolute;
+        height: 120px;
+        opacity: 1;
+    }
+
+    .wonderfilled{
+        display: flex;
+        justify-content: center;
+        margin-top: 180px;
+        z-index: -1;
+        position: absolute;
+        height: 130px;
+        opacity: 0;
+    }
+
+    /*-------middle text section container-------*/
+    .text-section{
+        border-top: solid 9px #58c2f4;
+        border-bottom: solid 9px #776cb1;
+        width: 100%;
+        height: 480px;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+    }
+
+    /* text elements */
+
+    .oreo-text{
+        height: 33px;
+        margin-top: -880px;
+        margin-left: -65px;
+        position: absolute;
+        opacity: 0;
+        z-index: -3;
+    }
+
+    .thins-text{
+        height: 33px;
+        margin-top: 340px;
+        margin-left: 66px;
+        position: absolute;
+    }
+
+    .thin-twist-text{
+        height: 14px;
+        margin-top: 400px;
+        position: absolute;
+    }
+
+    .twist{
+        height: 12px;
+        margin-top: 400px;
+        margin-left: -64px;
+        position: absolute;
+        opacity: 0;
+    }
+
+    .milk{
+        height: 260px;
+        margin-top: 55px;
+        margin-left: 72px;
+        position: absolute;
+        z-index: -6;
+    }
+
+    .hand{
+        height: 137px;
+        margin-top: -55px;
+        margin-left: 82px;
+        position: absolute;
+        z-index: -5;
+        opacity: 0;
+    }
+
+    .oreo-in-cup3{
+        height: 118px;
+        margin-left: 83px;
+        position: absolute;
+        z-index: -5;
+        opacity: 0;
+    }
+
+    .oreo-dipped3{
+        height: 139px;
+        margin-top: -30px;
+        margin-left: 83px;
+        position: absolute;
+        z-index: -5;
+        opacity: 0;
+    }
+
+
+    /*-------bottom CTA section container-------*/
+    .call-to-action{
+        width: 100%;
+        height: 410px;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        background-image: url("../img/milk-bkg2.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    /* call to action elements */
+
+    .package{
+        position: absolute;
+        height: 130px;
+        margin-top: 100px;
+    }
+
+    .get-yours-today{
+        position: absolute;
+        height: 22px;
+        margin-top: 270px;
+    }
+
+    .learn-more{
+        position: absolute;
+        height: 30px;
+        margin-top: 320px;
+    }
+
+
+    /*-------footer container-------------*/
+    .footer{
+        background-color: #776cb1;
+        padding-bottom: 25px;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        overflow: hidden;
+    }
+
+    /* footer elements */
+
+    ul{
+        font-size: .8em;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        position: absolute;
+    }
+
+    ul li{
+        margin-top: 20px;
+        justify-content: center;
+        flex-direction: row;
+        text-align: center;
+        white-space: nowrap ; /* terms of use is one line */
+    }
+
+    ul li a{
+        font-family: serif;
+        color: #fff;
+        text-decoration: none;
+        padding: 0 11px;
+    }
+
+    ul li a:hover{
+        color: #f60505;;
+    }
+
+    .social-icons{
+        margin-top: 70px;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+    }
+
+    .social-icons img{
+        padding: 0 20px;
+    }
+
+    .social-icons img:hover{
+        opacity: 0.5;
+    }
+
+}
+    
+
+
+/* ------------------480--------------------*/
+
+@media screen and (min-width: 480px){
+
+    /*------top oreo-------*/
+    .logo{
+        height: 80px;
+    }
+
+    .oreo-animation {
+        height: 580px;
+    }
+
+    .oreo-0{
+        height: 150px;
+    }
+
+    .oreo-1{
+        height: 150px;
+        margin-top: 370px;
+        margin-left: -155px;
+    }
+
+    .oreo-2{
+        height: 150px;
+        margin-top: 370px;
+        margin-left: 0;
+    }
+
+    .oreo-3{
+        height: 150px;
+        margin-top: 370px;
+        margin-left: 155px;
+    }
+
+    .wonderfilled{
+        margin-top: 210px;
+        z-index: 1;
+        height: 140px;
+        opacity: 0;
+    }
+
+    /*-----middle text-------*/
+    .text-section{
+        height: 590px;
+    }
+
+    .oreo-text{
+        height: 54px;
+        margin-top: -880px;
+        margin-left: -97px;
+        position: absolute;
+    }
+
+    .thins-text{
+        height: 54px;
+        margin-top: 370px;
+        margin-left: 103px;
+        position: absolute;
+    }
+
+    .thin-twist-text{
+        height: 21px;
+        margin-top: 470px;
+        position: absolute;
+    }
+
+    .twist{
+        height: 17px;
+        margin-top: 470px;
+        margin-left: -96px;
+        position: absolute;
+    }
+
+    .milk{
+        height: 270px;
+        margin-left: 114px;
+        z-index: -6;
+    }
+
+    .hand{
+        margin-left: 127px;
+        z-index: -5;
+        opacity: 0;
+    }
+
+    .oreo-in-cup3{
+        margin-left: 126px;
+        z-index: -5;
+        opacity: 0;
+    }
+
+    .oreo-dipped3{
+        margin-top: -30px;
+        margin-left: 127px;
+        z-index: -5;
+        opacity: 0;
+    }
+
+
+    /*-----call to action----- */
+    .call-to-action{
+        height: 480px;
+    }
+
+    .package{
+        height: 170px;
+        margin-top: 100px;
+    }
+
+    .get-yours-today{
+        height: 30px;
+        margin-top: 310px;
+    }
+
+    .learn-more{
+        height: 33px;
+        margin-top: 370px;
+    }
+
+
+    /*-------footer---------*/
+
+
+    ul{
+        font-size: 1em;
+    }
+
+    ul li a{
+        padding: 0 23px;
+    }
+
+}
+
+/* ------------------768-------------------- */
+
+@media screen and (min-width: 768px){
+    
+    .logo{
+        height: 90px;
+    }
+
+    .oreo-animation {
+        height: 730px;
+    }
+
+    .oreo-1{
+        margin-top: 490px;
+        margin-left: -270px;
+    }
+
+    .oreo-2{
+        margin-top: 490px;
+        margin-left: 0;
+    }
+
+    .oreo-3{
+        margin-top: 490px;
+        margin-left: 270px;
+    }
+
+    .wonderfilled{
+        margin-top: 190px;
+        height: 175px;
+    }
+
+    /* ---package---- */
+    .call-to-action{
+        height: 600px;
+    }
+
+    .package{
+        height: 260px;
+        margin-top: 130px;
+    }
+
+    .get-yours-today{
+        height: 35px;
+        margin-top: 430px;
+    }
+
+    .learn-more{
+        height: 42px;
+        margin-top: 490px;
+    }
+
+    /* ---footer--- */
+    .footer{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+    ul li{
+        margin-top: 38px;
+        text-align: left;
+    }
+
+    ul li a{
+        padding: 0 20px;
+    }
+
+    .social-icons{
+        margin-top: 25px;
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 30px;
+    }
+
+    .social-icons img{
+        padding: 0 11px;
+    }
+
+}
+
+/* ------------------1024--------------------*/
+
+@media screen and (min-width: 1024px){
+
+    /*----top oreo----------*/
+    .logo{
+        height: 100px;
+    }
+
+    .oreo-animation {
+        height: 675px;
+    }
+
+    .oreo-0{
+        height: 200px;
+        margin-top: 50px;
+    }
+
+    .oreo-1{
+        height: 200px;
+        margin-top: 420px;
+        margin-left: -400px;
+    }
+
+    .oreo-2{
+        height: 200px;
+        margin-top: 420px;
+        margin-left: 0;
+    }
+
+    .oreo-3{
+        height: 200px;
+        margin-top: 420px;
+        margin-left: 400px;
+    }
+
+    .wonderfilled{
+        margin-top: 250px;
+        height: 260px;
+        z-index: 1;
+    }
+
+    /*-----middle text-------*/
+    .text-section{
+        height: 690px;
+    }
+
+    .oreo-text{
+        height: 63px;
+        margin-left: -217px;
+        position: absolute;
+    }
+
+    .thins-text{
+        height: 63px;
+        margin-top: 380px;
+        margin-left: 10px;
+        position: absolute;
+    }
+
+    .thin-twist-text{
+        height: 35px;
+        margin-top: 550px;
+        position: absolute;
+    }
+
+    .twist{
+        height: 29px;
+        margin-top: 550px;
+        margin-left: -160px;
+        position: absolute;
+    }
+
+    .milk{
+        height: 400px;
+        margin-top: 70px;
+        margin-left: 270px;
+        z-index: -6;
+    }
+
+    .hand{
+        height: 200px;
+        margin-left: 280px;
+        z-index: -5;
+        opacity: 0;
+    }
+
+    .oreo-in-cup3{
+        height: 170px;
+        margin-left: 280px;
+        z-index: -5;
+        opacity: 0;
+    }
+
+    .oreo-dipped3{
+        height: 203px;
+        margin-top: -30px;
+        margin-left: 280px;
+        z-index: -5;
+        opacity: 0;
+    }
+
+
+    /*-----call to action----- */
+    .call-to-action{
+        height: 600px;
+    }
+
+    .package{
+        height: 270px;
+        margin-top: 210px;
+        margin-left: -194px;
+    }
+
+    .get-yours-today{
+        margin-top: 300px;
+        margin-left: 290px;
+        height: 35px;
+    }
+
+    .learn-more{
+        margin-top: 370px;
+        margin-left: 300px
+    }
+
+}
+
+
